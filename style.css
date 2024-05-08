@@ -43,6 +43,8 @@
     transform: translateX(0);
     box-shadow: 0 25px 50px rgba(0,0,0,0.5);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slider .slides:nth-child(3){
@@ -107,9 +109,10 @@
 }
 
 .content{
-    position: relative;
+    position: absolute;
     padding: 40px;
     max-width: 600px;
+    top: 10px;
     transition: 0.25s;
     transition-delay: 0s;
     transform: translateY(40px);
@@ -118,10 +121,11 @@
 }
 .content h2{
     font-size: 4em;
-    color: #fff;
+    color: white;
 }
 .content p{
-    color: #fff;
+    font-size: 1.5em;
+    color: white;
 }
 
 .slider .slides:nth-child(1) .content,
